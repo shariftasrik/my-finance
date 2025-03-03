@@ -83,7 +83,7 @@ id="email"
 label="Email"
 type ="email"
 placeholder="you@example.com" error={errors.email?.message} {...register("email")}
-className = "text-sm border dark: border-gray-800 dark: bg-transparent dark: placeholder: text-gray-700 dark: text-gray-400 dark: outline-none"
+className = "text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder-gray-400 dark:text-gray-400 dark:outline-none"
 />
 
 
@@ -96,7 +96,7 @@ type="password"
 placeholder="Your password"
 error={errors.password?.message}
 {...register("password")}
-className="text-sm border dark: border-gray-800 dark: bg-transparent dark: placeholder: text-gray-700 dark: text-gray-400 dark: outline-none"
+className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder-gray-400 dark:text-gray-400 dark:outline-none"
 />
 
 
