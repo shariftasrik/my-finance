@@ -15,7 +15,7 @@ const RootLayout = ()=> {
   return !user ? (
     <Navigate to="sign-in" replace={true}/>) : 
     (<>
-    <div>
+    <div className="min-h-[cal(h-screen-100px)]">
       <Outlet/>
     </div>
   </>
@@ -28,7 +28,7 @@ function App() {
 
   return (
    <main>
-      <div>
+      <div className="w-full min-h-screen px-6 bg-gray-100 md:px-20 dark:bg-slate-900">
         <Routes>
           <Route element={<RootLayout/>}>
             <Route path="/" element={<Navigate to="/overview" />} />
