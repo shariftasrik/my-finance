@@ -82,7 +82,7 @@ type="text"
 placeholder= "John Smith"
 error={errors?.firstName?.message}
 {...register("firstName")}
-className="text-sm border dark: border-gray-800 dark: bg-transparent dark: placeholder: text-gray-700 dark: text-gray-400 dark: outline-none"
+className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray-700 dark:text-gray-700 dark:outline-none"
 />
 <Input
 disabled= {loading}
@@ -90,30 +90,25 @@ id="email"
 label="Email"
 type ="email"
 placeholder="you@example.com" error={errors.email?.message} {...register("email")}
-className = "text-sm border dark: border-gray-800 dark: bg-transparent dark: placeholder: text-gray-700 dark: text-gray-400 dark: outline-none"
+className = "text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray-700 dark:text-gray-700 dark:outline-none"
 />
 
 
 
-<Input
-disabled={loading}
-id="password"
-label="Password"
-type="password"
-placeholder="Your password"
-error={errors.password?.message}
-{...register("password")}
-className="text-sm border dark: border-gray-800 dark: bg-transparent dark: placeholder: text-gray-700 dark: text-gray-400 dark: outline-none"
-/>
+  <Input
+      disabled={loading}
+      id="password"
+      label="Password"
+      type="password"
+      placeholder="Your password"
+      error={errors.password?.message}
+      {...register("password")}
+      className="text-sm border dark:border-gray-800 dark:bg-transparent dark:placeholder:text-gray-700 dark:text-gray-700 dark:outline-none"
+  />
+       
+  </div>
 
-
-
-
-
-             
-            </div>
-
-            <Button
+<Button
 type="submit"
 className="w-full bg-violet-800"
 disabled={loading}
@@ -121,19 +116,18 @@ disabled={loading}
 {loading ? <span className="text-2xl text-white animate-spin">⏳</span> : "Create an account"}
 
 </Button>
-
-
-          </form>
-        </CardContent>
-        
-<CardFooter className="justify-center gap-2">
-<p className="text-sm text-gray-600">Already have an account?</p>
- <Link
-to= "/sign-in"
-className="text-sm font-semibold text-violet-600 hover:underline"
->
-Sign in </Link>
-</CardFooter>
+          
+    </form>
+        </CardContent>   
+        <CardFooter className="justify-center gap-2">
+          <p className="text-sm text-gray-600">Already have an account?</p>
+          <Link
+              to= "/sign-in"
+              className="text-sm font-semibold text-violet-600 hover:underline"
+          >
+              Sign in 
+          </Link>
+        </CardFooter>
       </Card>
     </div>
   );
